@@ -2,8 +2,11 @@ package StepDef;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.WebDriver;
 import utils.DriverFactory;
+
+
 
 public class Hooks {
 
@@ -12,6 +15,7 @@ public class Hooks {
     @Before
     public void setUp(){
         driver = DriverFactory.getDriver();
+
     }
 
     @After
