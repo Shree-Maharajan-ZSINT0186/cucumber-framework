@@ -7,8 +7,8 @@ public class DriverFactory {
 private static WebDriver driver;
 public static WebDriver getDriver(){
     if(driver==null){
-        WebDriverManager.chromiumdriver().setup();
-        driver=new ChromeDriver();
+        WebDriverManager.chromedriver().driverVersion("136.0.7103.114").setup();
+        driver = new ChromeDriver();
 
     }
     return driver;
