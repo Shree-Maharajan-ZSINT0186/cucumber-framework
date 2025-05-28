@@ -40,3 +40,5 @@ build/
 # allure
 /allure-report
 /allure-results
+
+.scannerwork/
