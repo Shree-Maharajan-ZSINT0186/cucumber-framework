@@ -14,12 +14,13 @@ public class Hooks {
 
     @Before
     public void setUp(){
+        System.out.println("Running test on browser: " + System.getProperty("firefox", "chrome"));
         driver = DriverFactory.getDriver();
 
     }
 
     @After
     public void tearDown(){
-        DriverFactory.quiteDriver();
+        DriverFactory.quitDriver();
     }
 }
